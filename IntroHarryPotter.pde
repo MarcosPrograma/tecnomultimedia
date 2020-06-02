@@ -69,7 +69,7 @@ image(warnerBros, 200, 200, tamImagen, tamImagen);
 //Actualización de datos
   tamImagen -= 1.9;
   transparenciaImagen -= 5;
-  transparenciaTextos -= 0.3;
+  transparenciaTextos -= 0.2;
   tamTexto = tamTexto - 0.1;
   tamTexto2 = tamTexto2 - 0.1;
   frameCount = frameCount + 4;
