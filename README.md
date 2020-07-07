@@ -2,7 +2,7 @@
 
 
 ¡Narración!
-Contextualización (Pantalla 1): En algún lugar del recóndito espacio, se encuentra Tony Stark vagando en su nave averiada, este mismo debe volver al planeta tierra para poder salvar al mundo de las garras del gigante malévolo “Thanos”, el cual tiene en mente destruir a la mitad de la población con su guante y las gemas de infinito. 
+Contextualización (Pantalla 1): En algún lugar del recóndito espacio, se encuentra Tony Stark vagando en su nave averiada, este mismo debe volver al planeta tierra para poder salvar al mundo de las garras del gigante malévolo “Thanos”, el cual tiene en mente destruir a la mitad de la población con su guante y las gemas del infinito. 
 ¿Estarías dispuesto a ayudar a Iron Man en tomar las decisiones correctas? Solo tú puedes salvar el mundo. 
 
 Pantalla 2: Nuestra nave tiene varios problemas y no contamos con los recursos necesarios para repararla… Lo único que contengo son mis herramientas esenciales. 
