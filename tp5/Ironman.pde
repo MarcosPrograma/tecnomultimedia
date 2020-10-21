@@ -3,13 +3,13 @@ class Ironman {
   // Campos - variables (propiedades)
   float xIronman, yIronman;
   float velY = 2.5;
-  PImage ironman;  
+  PImage ironman; 
 
   // Constructor - metodo o funcion inicial
   Ironman() {
     xIronman = width - 700;
     yIronman = height/2;
-    ironman = loadImage("ironmanVolador.png");
+    ironman = loadImage("ironmanVolador.png"); 
   }
 
   // Metodos - funciones (acciones)
@@ -17,26 +17,21 @@ class Ironman {
     image(ironman, xIronman, yIronman);
   } 
 
-  //Metodos - keyPressed  
+  //Metodos
   void volarArriba() { // Mover hacia arriba con la tecla correspondiente
-    if ( keyCode == 'W' || keyCode == 'w' ) {
-      yIronman -= velY;
-    } 
-    //else if (yIronman > height - 100) {
-    //  yIronman = height - 100;
-    //  velY += velY;
-    //}
+    if ( keyCode == 'W' || keyCode == 'w') {
+      if (yIronman < 80) {
+      } else {
+        yIronman -= velY;
+      }
+    }
   }
   void volarAbajo() { // Mover hacia abajo con la tecla correspondiente
     if ( keyCode == 'S' || keyCode == 's') {
-      yIronman += velY;
-    } 
-    //else if (yIronman < 0) {
-    //  yIronman = 0;
-    //  velY -= velY;
-    //}
+      if (yIronman > height-80) {
+      } else {
+        yIronman += velY;
+      }
+    }
   }
-
-  //mousePressed()
-  // dispararCañon() // El personaje dispara con su cañon al presionar el click del mouse
 }

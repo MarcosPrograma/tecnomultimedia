@@ -8,31 +8,30 @@ class Enemigos {
 
   // Constructor - metodo o funcion inicial
   Enemigos() {
-    //xEnemigos = 500;
-    //yEnemigos = 200;
     xEnemigos = random (825, 850);
-    yEnemigos = random(1, 600);
-    velocidad = random(-1, -3);
-    //velocidad = random(-1, -3);
+    yEnemigos = random(50, 550);
+    velocidad = random(-3, -1);
     // Cargar la imagen
-    enemigo = loadImage("enemigos.png");
+    enemigo = loadImage("navesEnemigas.png");
   }
 
   void actualizar() { // Mover las naves y llamar a reciclar
     xEnemigos = xEnemigos + velocidad;
-    if ( xEnemigos > width) {
+    //if ( xEnemigos > width/2) {
+    if ( xEnemigos < -100) {
       reciclar();
+      //println(velocidad);
     }
   }
   // Metodos - funciones (acciones)
   void dibujar() { // Mostrar las naves
     image(enemigo, xEnemigos, yEnemigos);
-    println(mouseY);
+    //println(mouseY);
   } 
 
   void reciclar() { //Cambiar el valor de las propiedades random
-    xEnemigos = 850;
-    yEnemigos = random(height);
-    velocidad = random(-1, -3);
+    xEnemigos = 900;
+    yEnemigos = random(50, 550);
+    velocidad = random(-3, -1);
   }
 }
