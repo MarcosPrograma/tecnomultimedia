@@ -55,4 +55,8 @@ class Juego {
       }
     }
   }
+  
+  void mouse(){
+    jugador.dispararCanon();
+  }
 }

@@ -4,17 +4,20 @@ class Ironman {
   float xIronman, yIronman;
   float velY = 2.5;
   PImage ironman; 
+  Proyectil proyectil;
 
   // Constructor - metodo o funcion inicial
   Ironman() {
     xIronman = width - 700;
     yIronman = height/2;
     ironman = loadImage("ironmanVolador.png"); 
+    proyectil = new Proyectil(yIronman);
   }
 
   // Metodos - funciones (acciones)
   void dibujar() { // Mostrar al personaje
     image(ironman, xIronman, yIronman);
+    proyectil.dibujar();
   } 
 
   //Metodos
@@ -33,5 +36,8 @@ class Ironman {
         yIronman += velY;
       }
     }
+  }
+  void dispararCanon(){
+    proyectil.disparar();
   }
 }

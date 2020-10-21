@@ -4,19 +4,19 @@ class Proyectil {
   PImage proyectil;
 
   //Constructor 
-  Proyectil(float posx, float posy) {
-    xProyectil = posx;
+  Proyectil(float posy) {
+    xProyectil = width - 700;
     yProyectil = posy;
     movProyectil = 0;
     //Carga de imagenes
     proyectil = loadImage("proyectil.png");
   }
-  
-  void dibujar(){
-    image(proyectil, xProyectil, xProyectil);
+
+  void dibujar() {
+    image(proyectil, xProyectil, yProyectil);
   }
-  
-  void disparar(){
-    movProyectil += 2;
+
+  void disparar() {
+    xProyectil = movProyectil + 2;
   }
 }

@@ -29,7 +29,8 @@ void draw() {
 }
 
 void mousePressed() {
+  juego.mouse();
 }
 
-void keyPressed(){
+void keyPressed() {
 }
