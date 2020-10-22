@@ -11,7 +11,7 @@ class Proyectil {
     yProyectil = height/2;
     movProyectil = 2;
     //Carga de imagenes
-    proyectil = loadImage("proyectil.png");
+    proyectil = loadImage("proyectilRedondo.png");
   }
 
   // ------------------------------------------- Metodos - funciones (acciones) -------------------------------------------
@@ -20,6 +20,6 @@ class Proyectil {
   }
 
   void disparar() { //Mover proyectil sumando un pixel
-    xProyectil = xProyectil + 1;
+    xProyectil = xProyectil + 10;
   }
 }

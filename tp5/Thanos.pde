@@ -33,9 +33,9 @@ class Thanos {
   //------------------------------------------- COLISIÓN (Evaluar cuando tocan al objeto = Thanos) -------------------------------------------
   void destruir(Proyectil p) { 
     float d = dist( xThanos, yThanos, p.xProyectil, p.yProyectil );
-    if (d < xThanos/6 && d < yThanos/2.5 ) {
+    if (d < xThanos/5 && d < yThanos/4 ) {
       juego.estado = "ganar";
-      println(juego.estado);
+      println("¡Ganaste!");
     }
   }
 }

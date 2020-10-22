@@ -50,7 +50,7 @@ class Ironman {
       float d = dist( xIronman, yIronman, e[i].xEnemigos, e[i].yEnemigos);
       if ( d < xIronman && d < yIronman/0.2) {
         juego.estado = "perder";
-        println(juego.estado);
+        println("¡Perdiste! :(");
         //println(d);
       }
     }
