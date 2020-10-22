@@ -1,22 +1,25 @@
 class Proyectil {
+  //OBJETO ADJUNTO AL PROTAGONISTA
+  // ------------------------------------------- Campos - variables (propiedades) -------------------------------------------
   float xProyectil, yProyectil;
   float movProyectil;
   PImage proyectil;
 
-  //Constructor 
-  Proyectil(float posy) {
-    xProyectil = width - 700;
-    yProyectil = posy;
-    movProyectil = 0;
+  //Constructor == SETUP del OBJETO
+  Proyectil() {
+    xProyectil = width - 650;
+    yProyectil = height/2;
+    movProyectil = 2;
     //Carga de imagenes
     proyectil = loadImage("proyectil.png");
   }
 
-  void dibujar() {
+  // ------------------------------------------- Metodos - funciones (acciones) -------------------------------------------
+  void dibujar() { //DRAW Del OBJETO
     image(proyectil, xProyectil, yProyectil);
   }
 
-  void disparar() {
-    xProyectil = movProyectil + 2;
+  void disparar() { //Mover proyectil sumando un pixel
+    xProyectil = xProyectil + 1;
   }
 }

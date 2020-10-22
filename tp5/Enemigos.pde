@@ -1,12 +1,11 @@
 class Enemigos {
   //ENEMIGOS SECUNDARIOS - DE FORMA AZAROSA
-  // Campos - variables (propiedades)
+  // ------------------------------------------- Campos - variables (propiedades) -------------------------------------------
   float xEnemigos, yEnemigos;
   float velocidad;
   PImage enemigo; 
-  // Velocidad
 
-  // Constructor - metodo o funcion inicial
+  // Constructor == SETUP del OBJETO
   Enemigos() {
     xEnemigos = random (825, 850);
     yEnemigos = random(50, 550);
@@ -14,24 +13,28 @@ class Enemigos {
     // Cargar la imagen
     enemigo = loadImage("navesEnemigas.png");
   }
-
-  void actualizar() { // Mover las naves y llamar a reciclar
+  // MOVIMIENTO de las NAVES - VOLVER al INICIO UNA VEZ FUERA de la PANTALLA
+  void actualizar() { 
     xEnemigos = xEnemigos + velocidad;
-    //if ( xEnemigos > width/2) {
     if ( xEnemigos < -100) {
       reciclar();
-      //println(velocidad);
     }
   }
-  // Metodos - funciones (acciones)
-  void dibujar() { // Mostrar las naves
+  // ------------------------------------------- Metodos - funciones (acciones) -------------------------------------------
+  void dibujar() { //DRAW Del OBJETO
     image(enemigo, xEnemigos, yEnemigos);
-    //println(mouseY);
   } 
-
-  void reciclar() { //Cambiar el valor de las propiedades random
+  //ALTERAR el VALOR de las PROPIEDADES RANDOM
+  void reciclar() { 
     xEnemigos = 900;
     yEnemigos = random(50, 550);
     velocidad = random(-3, -1);
+  }
+  //------------------------------------------- COLISIÓN (Evaluar cuando tocan al objeto = Naves enemigas) -------------------------------------------
+  void destruir(Proyectil p) {
+    float d = dist( xEnemigos, yEnemigos, p.xProyectil, p.yProyectil );
+    if (d < yEnemigos/6 ) {
+      reciclar();
+    }
   }
 }
