@@ -35,7 +35,7 @@ class Thanos {
     float d = dist( xThanos, yThanos, p.xProyectil, p.yProyectil );
     if (d < xThanos/5 && d < yThanos/4 ) {
       juego.estado = "ganar";
-      println("¡Ganaste!");
+      println("¡Ganaste! :)");
     }
   }
 }

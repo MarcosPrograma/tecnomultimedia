@@ -60,7 +60,6 @@ class Juego {
       rect(width/2, height/2-225, 700, 180);
       fuenteDos("Entrarás en batalla contra Thanos y sus secuaces. \n Debes alejarte de sus robots ya que si tocan \n tu traje quedará inutilizable. \n Para derrotarlo pulsa el 'click derecho' \n indeterminadamente hasta conseguir vencer \n el campo de fuerza del Titán. \n Vuela y desciende con las teclas 'W' y 'S' \n ¡Suerte!", width/2, height/2 - 275, amarillo, 15 );
       popStyle();
-      //println(mouseX, mouseY);
     }
     if ( estado.equals( "jugar" ) ) {
       image(escenaJugar, width/2, height/2);
