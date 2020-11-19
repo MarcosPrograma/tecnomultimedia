@@ -10,4 +10,4 @@ ALUMNOS:
 
 JUÁREZ AGÜERO, Marcos Emmanuel (N.° de legajo: 85165/5).
 
-PERUGINI GUSTAVO (N.° de Legajo: 85154/1) 
+PERUGINI, Gustavo (N.° de Legajo: 85154/1) 
